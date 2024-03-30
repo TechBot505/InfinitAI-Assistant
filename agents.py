@@ -53,3 +53,19 @@ class ProjectAgents():
             allow_delegation=False,
             llm=model
         )
+        
+    def Summarization_Agent(self, model):
+        return Agent(
+            role='Starter_Code_Generator_Agent',
+            goal="""Summarize findings from each of the previous steps of the ML discovery process.
+                Include all findings from the problem definitions, data assessment and model recommendation 
+                and all code provided from the starter code generator.
+                """,
+            backstory="""You are a seasoned data scientist, able to break down machine learning problems for
+                less experienced practitioners, provide valuable insight into the problem and why certain ML models
+                are appropriate, and write good, simple code to help get started on solving the problem.
+                """,
+            verbose=True,
+            allow_delegation=False,
+            llm=model,
+        )
