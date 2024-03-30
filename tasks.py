@@ -57,3 +57,12 @@ class ProjectTasks():
             agent=agent,
             expected_output="Python code snippets for package import, data handling, model definition, and training, tailored to the user's project, plus a brief summary of the problem and model recommendations."
         )
+        
+    def task_summarize(self, agent):
+        return Task(
+            description="""
+                Summarize the results of the problem definition, data assessment, model recommendation and starter code generator.
+                Keep the summarization brief and don't forget to share the entirety of the starter code!
+                """,
+            agent=agent
+        )
