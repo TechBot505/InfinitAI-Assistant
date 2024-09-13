@@ -3,3 +3,5 @@ crewai==0.1.32
 pandas==1.5.1
 langchain-groq==0.0.1
 python-dotenv==0.19.0
+
+

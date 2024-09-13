@@ -23,7 +23,7 @@ def main():
     st.sidebar.title('Customization')
     model = st.sidebar.selectbox(
         'Choose a Model',
-        ['mixtral-8x7b-32768', 'llama2-70b-4096']
+        ['llama3-8b-8192', 'whisper-large-v3', 'mixtral-8x7b-32768', 'llama2-70b-8192', 'gemma-7b-it', 'gemma2-9b-it', ]
     )
     temprature = st.sidebar.slider('Model Temprature', 0.0, 1.0, 0.0)
     
